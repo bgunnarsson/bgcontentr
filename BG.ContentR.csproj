@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>BG.ContentR</Product>
+    <PackageId>BG.ContentR</PackageId>
+    <Title>BG.ContentR</Title>
+    <Description>...</Description>
+    <PackageTags>umbraco plugin package umbraco-marketplace</PackageTags>
+  </PropertyGroup>
+
+  <!-- <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0" />
+  </ItemGroup> -->
+
+  <ItemGroup>
+    <Content Include="App_Plugins\BG.ContentR\**">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <None Include="build\**">
+      <Pack>true</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

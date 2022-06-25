@@ -1,0 +1,27 @@
+﻿<!-- Latest Version -->
+<script src="https://cdn.jsdelivr.net/npm/@umbraco-ui/uui@latest/dist/uui.min.js"></script>
+
+<div class="contentr" ng-controller="ContentRController as vm">
+    <uui-box headline="Content awaiting approval">
+        <div class="contentr__list">
+            <div class="contentr__item" ng-repeat="a in vm.AllContent" ng-show="vm.AllContent.length > 0">
+                <div class="contentr__item-info">
+                    <a class="contentr__item-link" href="/umbraco/#/content/content/edit/{{a.id}}">
+                        <span style="display:block;font-weight:bold;">{{a.name}}</span>
+                    </a>
+
+                    <ul class="contentr__item-list">
+                        <li><span style="font-weight: 700">Created:</span> {{a.createDate}}</li>
+                        <li><span style="font-weight: 700">Last Edited: </span> {{a.updateDate}}</li>
+                        <li><span style="font-weight: 700">Created by:</span> {{a.owner.name}}</li>
+                    </ul>
+                </div>
+
+                <div class="contentr__item-buttons">
+                    <uui-button look="primary" color="positive" ng-click="vm.publisher($event, a.id)" ng-disabled="vm.disableButtons">Publish</uui-button>
+                    <uui-button look="placeholder" color="danger" ng-click="vm.deleter($event, a.id)" ng-disabled="vm.disableButtons">Delete</uui-button>
+                </div>
+            </div>
+        </div>
+    </uui-box>
+</div>

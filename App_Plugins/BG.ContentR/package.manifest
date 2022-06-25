@@ -1,0 +1,23 @@
+{
+  "name": "BG.ContentR",
+  "version": "1.0.3",
+  "allowPackageTelemetry": true,
+  "dashboards": [
+    {
+      "alias": "contentrDashboard",
+      "view": "/App_Plugins/BG.ContentR/views/dashboard.html",
+      "sections": [ "content" ],
+      "weight": -10,
+      "access": [
+        { "deny": "translator" },
+        { "grant": "admin" }
+      ]
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/BG.ContentR/scripts/scripts.js"
+  ],
+  "css": [
+    "~/App_Plugins/BG.ContentR/styles/styles.css"
+  ]
+}

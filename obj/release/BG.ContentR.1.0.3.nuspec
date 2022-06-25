@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BG.ContentR</id>
+    <version>1.0.3</version>
+    <title>BG.ContentR</title>
+    <authors>BG.ContentR</authors>
+    <description>...</description>
+    <tags>umbraco plugin package umbraco-marketplace</tags>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\_WebDev\Personal\BG.ContentR\bin\release\net6.0\BG.ContentR.dll" target="lib\net6.0\BG.ContentR.dll" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\App_Plugins\BG.ContentR\lang\en-US.xml" target=".\App_Plugins\BG.ContentR\lang\en-US.xml" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\App_Plugins\BG.ContentR\package.manifest" target=".\App_Plugins\BG.ContentR\package.manifest" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\App_Plugins\BG.ContentR\scripts\scripts.js" target=".\App_Plugins\BG.ContentR\scripts\scripts.js" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\App_Plugins\BG.ContentR\styles\styles.css" target=".\App_Plugins\BG.ContentR\styles\styles.css" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\App_Plugins\BG.ContentR\views\dashboard.html" target=".\App_Plugins\BG.ContentR\views\dashboard.html" />
+    <file src="C:\_WebDev\Personal\BG.ContentR\build\BG.ContentR.targets" target="buildTransitive\BG.ContentR.targets" />
+  </files>
+</package>

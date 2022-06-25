@@ -1,0 +1,133 @@
+.contentr {
+/*    padding-top: 100px;
+    background: deeppink;*/
+}
+
+.contentr__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+
+/*.contentr__item:first-child {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+}
+
+.contentr__item:last-of-type {
+    padding-bottom: 0;
+}*/
+
+.contentr__item-buttons {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 0;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+/*    background: #f9f9f9;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;*/
+}
+.contentr__item-buttons uui-button {
+    grid-column: span 12;
+}
+
+@media (min-width: 412px) {
+    .contentr__item-buttons uui-button {
+        grid-column: span 6;
+    }
+}
+
+.contentr__item-buttons button:first-child {
+    margin-left: 0;
+}
+
+.contentr__item uui-loader-circle {
+    display: none;
+}
+
+.contentr__item [label="editttt"] {
+    margin-top: 15px;
+}
+
+.contentr__item-link {
+    font-size: 16px;
+}
+
+.contentr__item-list {
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 8px;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-bottom: 15px;
+}
+
+
+.contentr__list {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.contentr__item {
+    grid-column: span 12;
+}
+
+@media (min-width: 666px) {
+    .contentr__item {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 1505px) {
+    .contentr__item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contentr__item-buttons {
+        margin-left: auto;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 0;
+
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        background: transparent;
+    }
+
+/*    .contentr__item-buttons uui-button,
+    .contentr__item-buttons button {
+        margin-left: 10px;
+    }*/
+
+    .contentr__item-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contentr__item-list {
+        margin-bottom: 0;
+    }
+}

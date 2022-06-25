@@ -1,0 +1,1 @@
+dotnet pack .\BG.ContentR.csproj -c release -o ./release /p:version=1.0.3
