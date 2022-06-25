@@ -1,4 +1,4 @@
-#_BG.ContentR_
+# _BG.ContentR_
 
 Custom dashboard that allows you to see all of your unpublished nodes for easy approval.
 
