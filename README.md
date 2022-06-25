@@ -2,6 +2,8 @@
 
 Custom dashboard that allows you to see all of your unpublished nodes for easy approval.
 
+Umbraco 9+
+
 ### `Installation`
 
 ```
